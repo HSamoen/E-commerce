@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="Contact.css" rel="stylesheet" type="text/css">
+    <title>Wellness Tea Contact Page</title>
+</head>
+<body>
+    <!-- nav-bar/hero-image -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <p>WELLNESS TEA</p>
+                <img src="Images/flower-logo-png.webp" alt="flower-logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="Homepage.html"> Home </a></li>
+                    <li><i class="fas fa-shopping-bag"></i><a href="Product.html"> Product </a></li>
+                    <li><i class="fas fa-phone"></i><a href="Contact.html"> Contact </a></li>
+                </ul>
+           </div>
+        </nav>
+            <div class="headline">
+                <h1>CONTACT US</h1> 
+            </div> 
+   </header>
+
+   <!-- contact form -->
+    <section class="contact-container">
+        <div class="form">
+            <h2>Have any questions?</h2>
+            <p>Please fill out the contact form below and we'll get back to you.</p>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <input type="text" name="fname" placeholder="Full name"> 
+                <input type="text" name="email" placeholder="Your email address"> 
+                <textarea name="comment" placeholder="Add a comment"></textarea> 
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+        <div class="connect">
+            <h2>Connect with us:</h2>
+            <p>For support or any questions: email us at Heban12@r2hstudent.org</p>
+           <div class="location">
+                <h2>Our Locations</h2>
+                <p>1101 Red Ventures Dr, Fort Mill, SC 29707</p>
+                <div class="map-responsive">
+                <iframe title="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13072.088703435642!2d-80.846034!3d35.00615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd566135231a2a0b!2sRed%20Ventures!5e0!3m2!1sen!2sus!4v1673854186481!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+           </div>
+        </div>
+    </section>
+
+ <!-- footer  -->
+    <footer>
+        <section class="about">
+            <h3>About Us</h3>
+            <p>At Wellness Tea, we exclusively source the finest and most delicious teas from eco-friendly and fair-trade farms all over the world.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/" aria-label="ig-page" target="_blank"><img src="Images/ig-icon.png" alt="ig-logo"></a>
+                <a href="https://www.linkedin.com/feed/" aria-label="li-page" target="_blank"><img src="Images/li-icon.webp" alt="li-logo"></a>
+                <a href="https://www.google.com/gmail/about/" aria-label="gmail-page" target="_blank"><img id="google-icon" src="Images/google-icon.png" alt="google-logo"></a> 
+                <a href="https://www.facebook.com/" aria-label="fb-page" target="_blank"><img src="Images/fb-icon.png" alt="fb-logo"></a>
+            </div>
+        </section>
+        <section class="contact-footer">
+            <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i><a> 1101 Red Ventures Dr, Fort Mill, SC 29707 </a></li>     
+                    <li><i class="fas fa-envelope"></i><a> Heban12@r2hstudent.org </a></li> 
+                    <li><i class="fas fa-phone"></i><a> (704) 971-2300 </a></li>
+                </ul>
+        </section>
+        <section class="email-sub">
+            <h3>Email Updates</h3>
+            <input type="text" name="email-sub" placeholder="Enter your Email here*">
+            <button type="submit" value="Submit">Subscribe Now</button>
+        </section>  
+    </footer>  
+    <script src="Contact.js"></script> <!--javascript form validation-->
+</body>
+</html>

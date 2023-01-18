@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="Homepage.css" rel="stylesheet" type="text/css">
+    <title>Wellness Tea Homepage</title>
+</head>
+<body>
+    <!-- nav-bar/hero-image -->
+   <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <p>WELLNESS TEA</p>
+                <img src="Images/flower-logo-png.webp" alt="flower-logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="Homepage.html"> Home </a></li>
+                    <li><i class="fas fa-shopping-bag"></i><a href="Product.html"> Product </a></li>
+                    <li><i class="fas fa-phone"></i><a href="Contact.html"> Contact </a></li>
+                </ul>
+           </div>
+        </nav>
+            <div class="headline">
+                <h1>We handcraft customized organic tea blends for you, using only the finest ingredients, to preserve their health benefits and deliver them fresh to you </h1>
+                <button type="submit" value="Submit" onclick="window.location.href='Product.html';" aria-label="Product-page">SHOP NOW</button>
+            </div> 
+   </header>
+   
+<!-- Homepage content -->
+
+<!-- section 1 -->
+    <section class="top-picks"> 
+            <h2>- Our Top Selections -</h2>
+            <p>Black Tea | White Tea | Green Tea</p>
+        <div class="top-pick-products">           
+                <img src="Images/blackTea.webp" alt="black-tea">                 
+                <img src="Images/whiteTea.webp" alt="white-tea">       
+                <img src="Images/greenTea.webp" alt="green-tea">  
+        </div>
+        <button onclick="window.location.href='Product.html';" aria-label="Product-page">BROWSE TEAS</button> 
+    </section>
+
+
+<!-- section 2 -->
+        <!-- text-slideshow -->
+        <section class="tea-info">
+            <div class="mySlides">
+                <h2>HAND-PICKED LOOSE LEAF TEA</h2>
+                <p>To create our organic and one-of-a-kind tea blends. Our tea leaves, flowers, herbs, and bark are hand-picked from sustainable farms all over the world.</p>
+            </div>
+            
+            <div class="mySlides">
+                <h2>BENEFITS OF DRINKING OUR TEA</h2>
+              <p>Numerous studies have found that a variety of teas can boost your immune system, fight inflammation, and even protect you from cancer and heart disease. While some teas have more health benefits than others, there is plenty of evidence that drinking tea on a regular basis can have a long-term impact on your health.</p>
+            </div>
+            
+            <div class="mySlides">
+                <h2>SUSTAINABILITY</h2>
+              <p>Our mission is to find the world's best organic teas and deliver them to you as sustainably as possible. We are constantly working to improve this process, envisioning a tea leaf that happily moves through its life cycle, creating a healthier world and a healthier you.</p>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </section>
+            
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    
+<!-- section 3 -->
+    <section class="sub-headline">    
+        <h2>SAVOR EVERY SIP</h2>
+        <p>Our teas are tastefully prepared to preserve the full-body flavor profiles and aromas of loose-leaf tea</p>  
+    </section>
+
+<!-- footer  -->
+    <footer>
+        <section class="about">
+            <h3>About Us</h3>
+            <p>At Wellness Tea, we exclusively source the finest and most delicious teas from eco-friendly and fair-trade farms all over the world.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/" aria-label="ig-page" target="_blank"><img src="Images/ig-icon.png" alt="ig-logo"></a>
+                <a href="https://www.linkedin.com/feed/" aria-label="li-page" target="_blank"><img src="Images/li-icon.webp" alt="li-logo"></a>
+                <a href="https://www.google.com/gmail/about/" aria-label="gmail-page" target="_blank"><img id="google-icon" src="Images/google-icon.png" alt="google-logo"></a> 
+                <a href="https://www.facebook.com/" aria-label="fb-page" target="_blank"><img src="Images/fb-icon.png" alt="fb-logo"></a>
+            </div>
+        </section>
+        <section class="contact-footer">
+            <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i><a> 1101 Red Ventures Dr, Fort Mill, SC 29707 </a></li>     
+                    <li><i class="fas fa-envelope"></i><a> Heban12@r2hstudent.org </a></li> 
+                    <li><i class="fas fa-phone"></i><a> (704) 971-2300 </a></li>
+                </ul>
+        </section>
+        <section class="email-sub">
+            <h3>Email Updates</h3>
+            <input type="text" name="email-sub" placeholder="Enter your Email here*">
+            <button type="submit" value="Submit">Subscribe Now</button>
+        </section>  
+    </footer>  
+    <script src="homepage.js"></script>
+</body>
+</html>
